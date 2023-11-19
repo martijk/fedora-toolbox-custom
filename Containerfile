@@ -13,6 +13,11 @@ LABEL name="$NAME" \
 
 ENV EDITOR=nvim
 
+# install repositories
+RUN dnf -y install \
+  https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+  https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
 # Install packages
 RUN dnf -y upgrade \
   && dnf -y install \
