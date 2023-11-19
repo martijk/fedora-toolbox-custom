@@ -13,7 +13,7 @@ on:
       - Containerfile
 
 env:
-  IMAGE_NAME: toolbox
+  IMAGE_NAME: fedora-toolbox-custom
   REGISTRY: ghcr.io
 
 jobs:
