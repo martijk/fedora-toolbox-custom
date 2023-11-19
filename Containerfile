@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora-toolbox:39
+FROM registry.fedoraproject.org/fedora-toolbox:40
 
 ARG NAME=fedora-toolbox-custom
 ARG BIN_DIR=/usr/local/bin
