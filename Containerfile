@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora-toolbox:latest
+FROM registry.fedoraproject.org/fedora-toolbox:39
 
 ARG NAME=fedora-toolbox-custom
 ARG BIN_DIR=/usr/local/bin
@@ -25,6 +25,7 @@ RUN dnf -y upgrade \
   @c-development \
   python3-devel \
   kitty \
+  kitty-bash-integration \
   tmux \
   mosh \
   npm \
