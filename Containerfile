@@ -5,7 +5,7 @@ ARG BIN_DIR=/usr/local/bin
 ARG COMPLETIONS_DIR=/usr/local/share/bash-completion/completions
 
 # renovate: datasource=github-releases depName=sigstore/cosign
-ARG COSIGN_VERSION=v2.2.4
+ARG COSIGN_VERSION=v2.4.1
 
 LABEL name="$NAME" \
       summary="Fedora toolbox container" \
